@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Uso de tabelas grandes</title>
+  <style>
+        
+        body{
+        
+        font-family: Arial, Helvetica, sans-serif; 
+      
+        
+       }
+       
+
+        table {
+        width: 500px;
+        border-collapse: collapse;
+        border: 1px solid black;
+        position: relative;   
+        }
+       
+        td, th {
+        border: 1px solid black;
+         padding: 10px;
+         font-weight: normal;
+         font-size: 13px;   
+         text-align: left;
+      }
+         
+         th.principal{
+           border: 1px solid black;
+          background-color: rgba(20, 20, 20, 0.742);
+           color: white;
+           font-size: 1.5em;
+           padding: 10px;
+           
+         }
+
+       caption {
+         background-color: rgba(128, 128, 128, 0.545);
+         font-size: 25px;
+         padding: 10px;
+         background-color:rgb(23, 23, 23) ;
+         color: white;
+        }
+         
+        thead{
+          border: 0px solid black;
+            width: 500px;
+            font-size: 10px;
+            text-align: center;
+            background-color:rgba(20, 20, 20, 0.742) ;
+            color: white;
+        }
+        tfoot{
+          background-color: rgba(20, 20, 20, 0.742);
+         color: white;
+        }
+      
+         
+
+          thead > tr > th{
+           position: sticky;
+           top: -1px;
+           background-color: rgba(20, 20, 20, 0.742);
+           
+
+          } 
+
+         tbody tr:nth-child(2n) {
+            background-color: lightgrey;
+         }
+         
+          td.num {
+            text-align: right;
+          }
+          
+          footer{
+            border: 0px solid black;
+            width: 500px;
+            font-size: 10px;
+            text-align: center;
+            background-color:rgba(20, 20, 20, 0.742) ;
+            color: white;
+            
+          }
+          a {
+           
+            color: white;
+           
+          }
+
+          a:hover{
+          color:black;
+          } 
+         
+      
+  </style>
+
+  
+                   
+</head>
+<body>
+  <h1>Tabela População Brasileira </h1>
+  
+   <table>
+      <caption>População das Unidades federativas</caption>
+      <thead>
+         <tr >
+            <th class="principal" scope="col" >Estado</th>
+            <th class="principal" scope="col" style="width: 75px;">População</th>
+
+         </tr>   
+                 
+      </thead>
+
+      <tbody>
+         <tr>
+            <td>São Paulo</td>
+            <td class="num">45 973 194	</td>
+         </tr>
+         <tr>
+            <td>Minas Gerais</td>
+            <td class="num">21 322 691</td> 
+         </tr>
+         <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">17 219 679	</td>
+         </tr>
+         <tr>
+            <td>Bahia</td>
+            <td class="num">14 850 513</td>
+         </tr>
+         <tr>
+            <td>Paraná</td>
+            <td class="num">11 824 665</td>
+         </tr>
+         <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="num">11 229 915</td>
+         </tr>
+         <tr>
+            <td>Pernambuco</td>
+            <td class="num">9 539 029</td>
+         </tr>
+         <tr>
+            <td> Ceará</td>
+            <td class="num">9 233 656	</td>
+         </tr>
+         <tr>
+            <td>Pará</td>
+            <td class="num">8 664 306</td>
+         </tr>
+         <tr>
+            <td> Santa Catarina</td>
+            <td class="num">8 058 441</td>
+         </tr>
+         <tr>
+            <td>Goiás</td>
+            <td class="num">7 350 483</td>
+         </tr>
+         <tr>
+            <td> Maranhão</td>
+            <td class="num">7 010 960</td>
+         </tr>
+         <tr>
+            <td> Amazonas</td>
+            <td class="num">4 281 209	</td>
+         </tr>
+         <tr>
+            <td>Paraíba</td>
+            <td class="num">4 145 040</td>
+         </tr>
+         <tr>
+            <td>Espírito Santo</td>
+            <td class="num">4 102 129</td>
+         </tr>
+         <tr>
+            <td> Mato Grosso</td>
+            <td class="num">3 836 399</td>
+         </tr>
+         <tr>
+            <td>Rio Grande do Norte</td>
+            <td class="num">3 446 071</td>
+         </tr>
+         <tr>
+            <td>Piauí</td>
+            <td class="num">3 375 646</td>
+         </tr>
+         <tr>
+            <td> Alagoas</td>
+            <td class="num">3 220 104</td>
+         </tr>
+         <tr>
+            <td> Distrito Federal</td>
+            <td class="num">2 982 818	</td>
+         </tr>
+         <tr>
+            <td> Mato Grosso do Sul</td>
+            <td class="num">2 901 895</td>
+         </tr>
+         <tr>
+            <td> Sergipe</td>
+            <td class="num">2 291 077</td>
+         </tr>
+         <tr>
+            <td>Rondônia</td>
+            <td class="num">1 746 227</td>
+         </tr>
+         <tr>
+            <td> Tocantins</td>
+            <td class="num">1 577 342</td>
+         </tr>
+         <tr>
+            <td>Acre</td>
+            <td class="num">880 631</td>
+         </tr>
+         <tr>
+            <td>Amapá</td>
+            <td class="num">802 837</td>
+         </tr>
+         <tr>
+            <td>Roraima</td>
+            <td class="num">716 793	</td>
+         </tr>
+
+
+      </tbody>
+      
+      <tfoot>
+           <tr>
+           <th scope="row">Total de Habitantes</th>
+           <td class="num"><strong>212 583 750</strong></td>  
+           </tr>
+      </tfoot>
+
+
+   </table>
+   
+      <footer>Tabela criada por <a href="https://gabrielfresta.github.io/meu-portifolio/" target="_blank">Gabriel Fresta</a>
+      <p>Fonte dos dados: <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank">Wikipédia</a></p></footer>
+       
+    
+                    
+</body>
+</html>
